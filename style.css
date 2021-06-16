@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Yanone+Kaffeesatz:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------*/
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 75px;
+    width: 100vw;
+
+    background-color: #FEBC3E;
+
+    border-bottom: black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    user-select: none;
+}
+.logo img{
+    width: 30px;
+    position: cover;
+}
+
+.titulo h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 90px;
+}
+
+.links{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.links a{
+    font-family: 'Baloo Tammudu 2', cursive;
+    height: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+
+    transition: 0.1s;
+}
+.links a:hover{
+    border-bottom: 2px solid #C77B00;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 70px;
+    padding-left: 10px;
+
+    height: 35px;
+    width: 170px;
+
+    background-color: #FEA100;
+
+    border: none;
+    border-radius: 25px;
+
+    user-select: none;
+
+    transition: 0.5s;
+}
+.delivery:hover{
+    background-color: #C10B28;
+}
+
+.delivery img{
+    width: 30px;
+    padding-right: 10px;
+}
+
+.delivery p{
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 5px;
+    height: 33px;
+    font-size: 13px;
+    color: white;
+}
+
+/*-------------------------------------------*/
+
+.highlight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 520px;
+    width: 100vw;
+
+    background-color: #FEBC3E;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    height: 385px;
+    user-select: none;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    background-color: #C10B28;
+}
+.img img{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    margin: 15px;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+}
+.txt a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    margin: 14px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-decoration: none;
+    color: black;
+}
+.txt a:hover{
+    color: white;
+}
+
+/*-------------------------------------------*/
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 490px;
+    width: 100vw;
+}
+
+.background{
+    width: 490px;
+    opacity: 0.1;
+}
+
+.hamburger{
+    width: 610px;
+    position: absolute;
+    filter: saturate(75%);
+}
+
+/*-------------------------------------------*/
+
+.hamburger-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: rotate(-7deg);
+}
+.offer{
+    display: flex;
+    flex-direction: row;
+}
+.offer hr{
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger-name p{
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+}
+.hamburger-name h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 95px;
+}
+.hamburger-name h2{
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
+}
+
+/*-------------------------------------------*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 385px;
+    width: 140px;
+    background-color: teal;
+}
+
+.number{
+    display: flex;
+    height: 385;
+    width: 70px;
+    transform: rotate(90deg);
+}
+.number a{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    
+    background-color: #C10B28;
+
+    transition: 0.5s;
+}
+.number a:hover{
+    color: #FEA100;
+}
+
+/*-------------------------------------------*/
+
