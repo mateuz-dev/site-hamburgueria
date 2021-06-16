@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Yanone+Kaffeesatz:wght@600&display=swap');
 
 *{
@@ -241,3 +242,285 @@ header{
 
 /*-------------------------------------------*/
 
+.sale-top{
+    margin-top: 10px;
+}
+.sale-bottom{
+    margin-bottom: 10px;
+}
+
+.sale-top, .sale-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sale-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*preset h1*/
+.sale-top h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 50px;
+    padding-bottom: 15px;font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+/*quadro 1:*/
+.sale1{
+    width: 375px;
+    height: 150px;
+    background-image: url(img/sale/flame\ grilled.jpg);
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.600);
+    background-size: cover;
+    margin: 15px;
+}
+#price1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #C10B28;
+    border-radius: 50%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+#offer-time1{
+    margin-top: 25px;
+    padding-left: 15px;
+    background-color: #FEBC3E;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 15px;
+    height: 25px;
+    width: 140px;
+}
+
+/*quadro 2:*/
+.sale2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 175px;
+    height: 150px;
+    background-color: #FEBC3E;
+    margin: 15px;
+}
+.sale2 img{
+    display: flex;
+    width: 75%;
+    height: 75px;
+}
+.sale2-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.sale2 h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+.sale2 p{
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 5px;
+}
+
+/*quadro3:*/
+.sale3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 175px;
+    height: 150px;
+    background-image: url(img/sale/hot\ dog.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.600);
+    background-size: cover;
+    margin: 15px;
+}
+.sale3 h1{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+/*quadro 4:*/
+.sale4{
+    width: 375px;
+    height: 150px;
+    background-image: url(img/sale/spicy\ burger.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.600);
+    background-size: cover;
+    margin: 15px;
+}
+#price2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #FEBC3E;
+    border-radius: 50%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+#offer-time2{
+    margin-top: 25px;
+    padding-left: 15px;
+    background-color: #C10B28;
+    color: white;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 15px;
+    height: 25px;
+    width: 140px;
+}
+
+/*quadro 5:*/
+.sale5{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 175px;
+    height: 150px;
+    background-image: url(img/sale/3\ burger\ offer.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.600);
+    background-size: cover;
+    margin: 15px;
+}
+
+.sale5 h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+/*quadro 6:*/
+.sale6{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 175px;
+    height: 150px;
+    background-color: #C10B28;
+    margin: 15px;
+}
+.sale6 img{
+    display: flex;
+    width: 75%;
+    height: 75px;
+}
+.sale6-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.sale6 h3{
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+}
+.sale6 h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FEBC3E;
+    font-size: 40px;
+}
+
+/*-------------------------------------------*/
+
+.order{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2B2B2B;
+    width: 100vw;
+    height: 100vh;
+}
+
+.order-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-info, .order-info2{
+    display: flex;
+    flex-direction: row;
+}
+
+.order-background{
+    opacity: 0.06;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.order-cifrao{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FEBC3E;
+    font-size: 87px;
+    height: 120px;
+}
+.order-valor{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FEBC3E;
+    font-size: 148px;
+    height: 120px;
+    margin-right: 30px;
+}
+.order-name{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 65px;
+    width: 285px;
+    height: 120px;
+}
+.order-obs{
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+    font-size: 10px;
+}
+.order-delivery{
+    font-family: 'Dancing Script', cursive;
+    color: #FEBC3E;
+    font-size: 22px;
+    transform: rotate(-9deg);
+    padding-left: 20px;
+}
+.order-btn{
+    background-color: #C10B28;
+    margin-top: 25px;
+    margin-right: 5px;
+    width: 180px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 15px;
+}
+
+.img-combo img{
+    width: 30px;
+}
