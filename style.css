@@ -12,6 +12,10 @@
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header{
@@ -25,8 +29,6 @@ header{
     width: 100vw;
 
     background-color: #FEBC3E;
-
-    border-bottom: black;
 }
 
 .logo{
@@ -86,8 +88,12 @@ header{
     user-select: none;
 
     transition: 0.5s;
+
 }
 .delivery:hover{
+    background-color: #C10B28;
+}
+.delivery:focus{
     background-color: #C10B28;
 }
 
@@ -101,10 +107,19 @@ header{
     padding-top: 5px;
     height: 33px;
     font-size: 13px;
+    text-decoration: none;
     color: white;
 }
 
 /*-------------------------------------------*/
+
+.highlight-info{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEBC3E;
+}
 
 .highlight{
     display: flex;
@@ -112,7 +127,6 @@ header{
     justify-content: space-around;
     height: 520px;
     width: 100vw;
-
     background-color: #FEBC3E;
 }
 
@@ -172,10 +186,7 @@ header{
 .hamburger{
     width: 610px;
     position: absolute;
-    filter: saturate(75%);
 }
-
-/*-------------------------------------------*/
 
 .hamburger-name{
     display: flex;
@@ -198,55 +209,134 @@ header{
     color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
+    text-shadow: 5px 5px 10px black;
 }
 .hamburger-name h1{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
     font-size: 95px;
+    text-shadow: 5px 5px 10px black;
 }
 .hamburger-name h2{
     color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 35px;
+    text-shadow: 5px 5px 10px black;
 }
 
 /*-------------------------------------------*/
 
 .contact{
-    display: flex;
-    flex-direction: column;
-    height: 385px;
-    width: 140px;
-    background-color: teal;
+    transform: rotate(90deg);
+    height: 70px;
+    width: 70px;
 }
 
 .number{
     display: flex;
-    height: 385;
-    width: 70px;
-    transform: rotate(90deg);
+    align-items: center;
+    justify-content: center;
+    width: 385px;
+    height: 65px;
 }
 .number a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
-    text-decoration: none;
-    font-size: 25px;
-    
     background-color: #C10B28;
-
+    border-radius: 14px;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 30px;
     transition: 0.5s;
 }
 .number a:hover{
     color: #FEA100;
 }
 
+
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 385px;
+    height: 50px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 15px;
+}
+.call select{
+    margin: 5px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+.call option{
+    background-color: #FEBC3E;
+}
+
 /*-------------------------------------------*/
+
+.radio-footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+    background-color: #FEBC3E;
+    padding-right: 50px;
+    gap: 10px;
+    width: 100vw;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #C10B28;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/*-------------------------------------------*/
+
+.sale{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+}
+
 
 .sale-top{
     margin-top: 20px;
+    width: 100vw;
 }
 .sale-bottom{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    width: 100vw
 }
 
 .sale-top, .sale-bottom{
@@ -254,19 +344,19 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
-.sale-bottom{
+
+.title-top{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    padding-top: 20px;
 }
 
-
 /*preset h1*/
-.sale-top h1{
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-right: 50px;
+.title-top h1{
+    padding-right: 125px;
+    padding-left: 10px;
     padding-bottom: 15px;font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
     font-size: 40px;
@@ -279,8 +369,18 @@ header{
     background-image: url(img/sale/flame\ grilled.jpg);
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.600);
-    background-size: cover;
+    background-size: 100% cover;
     margin: 15px;
+
+    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  background-size: 100%;
+}
+.sale1:hover{
+    background-size: 110%;
 }
 #price1{
     display: flex;
@@ -319,6 +419,7 @@ header{
     width: 75%;
     height: 75px;
 }
+
 .sale2-txt{
     display: flex;
     flex-direction: column;
@@ -349,8 +450,19 @@ header{
     background-position: center;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.600);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin: 15px;
+
+    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  background-size: 100%;
+}
+.sale3:hover{
+    background-size: 125%;
 }
 .sale3 h1{
     padding: 0;
@@ -366,11 +478,21 @@ header{
     width: 375px;
     height: 150px;
     background-image: url(img/sale/spicy\ burger.jpg);
-    background-position: center;
+    background-position: center right;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.600);
     background-size: cover;
     margin: 15px;
+
+    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  background-size: 100%;
+}
+.sale4:hover{
+    background-size: 110%;
 }
 #price2{
     display: flex;
@@ -408,6 +530,16 @@ header{
     background-color: rgba(0, 0, 0, 0.600);
     background-size: cover;
     margin: 15px;
+
+    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  background-size: 100%;
+}
+.sale5:hover{
+    background-size: 125%;
 }
 
 .sale5 h1{
@@ -517,18 +649,24 @@ header{
     color: #FEBC3E;
     font-size: 22px;
     transform: rotate(-9deg);
-    padding-left: 20px;
 }
 #order-btn{
     background-color: #C10B28;
     margin-top: 25px;
-    margin-right: 5px;
     width: 180px;
     height: 30px;
     border: none;
     color: white;
     font-family: 'Baloo Tammudu 2', cursive;
     font-size: 15px;
+    transition: 0.5s;
+}
+#order-btn:hover{
+    background-color: #FEA100;
+    cursor: pointer;
+}
+#order-btn:focus{
+    background-color: #FEA100;
 }
 
 .img-combo img{
@@ -560,22 +698,82 @@ header{
 }
 
 .burgers{
-    width: 800px;
+    display: flex;
+    align-items: center;
+    width: 1050px;
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.burgers img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.burgers h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 16px;
+    padding-top: 10px;   
+}
+.burgers p{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.burger-left, .burger-rigth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.burger-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.burger-center button{
+    padding-top: 5px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    height: 30px;
+    height: 35px;
+    width: 170px;
+    background-color: #FEA100;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    user-select: none;
+    transition: 0.5s;
+
+}
+.burger-center button:hover{
+    background-color: #C10B28;
+    cursor: pointer;
+}
+.burger-center button:focus{
     background-color: #C10B28;
 }
 
-
-.burger-left, .burger-rigth{
-    width: 30%;
-    margin: 10px;
+.burger-left:hover{
+    box-shadow: 0 0 1em  #FEA100;
 }
-.burger-center{
-    width: 40%;
-    margin: 10px;
+.burger-center:hover{
+    box-shadow: 0 0 1em  #FEA100;
+}
+.burger-rigth:hover{
+    box-shadow: 0 0 1em  #FEA100;
 }
 
 /*-------------------------------------------*/
@@ -623,6 +821,7 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 65px;
+    padding-bottom: 50px;
 }
 .tasty-burgers h1{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -654,6 +853,9 @@ header{
     margin-right: 10px;
     color: gray;
 }
+.burgers-category-buttons button:hover{
+    cursor: pointer;
+}
 .burgers-category-buttons button:focus{
     background-color: #FEA100;
     color: white;
@@ -682,6 +884,8 @@ header{
 .burger-table td:hover{
     box-shadow: 0 0 1em  #FEA100;
     background-color: white;
+    color: #FEA100;
+    cursor: pointer;
 }
 .burger-table img{
     width: 100%;
@@ -714,10 +918,21 @@ header{
     margin-top: 20px;
     padding-right: 15px;
     padding-left: 15px;
+    transition: 0.3s;
 }
+.reload:hover{
+    background-color: #C10B28;
+    cursor: pointer;
+}
+.reload:focus{
+    background-color: #C10B28;
+    cursor: pointer;
+}
+
 .reload img{
     width: 18px;
 }
+
 .reload p{
     font-family: 'Baloo Tammudu 2', cursive;
     padding-left: 10px;
@@ -726,3 +941,137 @@ header{
 }
 
 /*-------------------------------------------*/
+
+.burgers-pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-top: 50px;
+    background-color: rgb(245, 245, 245);;
+}
+.burgers-pictures h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
+}
+.burgers-pictures p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.burgers-gallery{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    padding-top: 45px;
+}
+.burgers-gallery a{
+    display: flex;
+    align-items: flex-end;
+}
+.burgers-gallery img{
+    width: 100%;
+}
+
+/*-------------------------------------------*/
+
+.sing-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+}
+.sing-up h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+
+.email{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 850px;
+    margin-top: 50px;
+}
+.search-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px; 
+    line-height: 1;
+}
+.btn-email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.email-button{
+    position: absolute;
+    border-radius: 100px;
+    background-color: #D00810;
+    color: white;
+    border: none;
+    margin-right: 8px;
+    padding: 5px 25px 5px 25px;
+    transition: 0.3s;
+}
+.email-button:hover{
+    background-color: #FEA100;
+    cursor: pointer;
+}
+.email-button:focus{
+    background-color: #FEA100;
+}
+
+
+.nasimburger-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.nasimburger-info hr{
+    border: 1px solid #FEA100;
+}
+
+.nasimburger-info a{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.nasimburger-info a:hover{
+    color: #FEA100;
+}
+
+
+
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30px;
+    background-color: #1F1F1F;
+}
+
+.empty a{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .5s;
+}
+.empty a:hover{
+    color: #FEBC3E;
+}
